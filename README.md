@@ -143,8 +143,8 @@ plt.show()
 
 
 ```python
-male_df.Height.plot.hist(bins = binsize, normed = True,  alpha = 0.7, label ="Male Height");
-female_df.Height.plot.hist(bins = binsize, normed = True, alpha = 0.7, label = 'Female Height');
+male_df.Height.plot.hist(bins = binsize, density = True,  alpha = 0.7, label ="Male Height");
+female_df.Height.plot.hist(bins = binsize, density = True, alpha = 0.7, label = 'Female Height');
 plt.legend()
 x,y = density(male_df.Height)
 plt.plot(x,y)
@@ -161,8 +161,8 @@ plt.show()
 
 
 ```python
-male_df.Weight.plot.hist(bins = binsize, normed = True,  alpha = 0.7, label ="Male weight");
-female_df.Weight.plot.hist(bins = binsize, normed = True, alpha = 0.7, label = 'Female weight');
+male_df.Weight.plot.hist(bins = binsize, density = True,  alpha = 0.7, label ="Male weight");
+female_df.Weight.plot.hist(bins = binsize, density = True, alpha = 0.7, label = 'Female weight');
 plt.legend()
 x,y = density(male_df.Weight)
 plt.plot(x,y)
